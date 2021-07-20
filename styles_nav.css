@@ -1,0 +1,192 @@
+.nav-bar { /*Ajustamos el navbar al 100%*/
+    width: 100%;
+    height: 80px;
+    display: flex;
+    margin: auto;
+    padding: 0 20px;
+}
+
+.left-logo {
+    line-height: 80px; /*El line height es para que todo texto se acomode según la altura, en este caso, 80px*/
+    text-decoration: none;
+    flex-shrink: 0; /*El flex-shrink sirve al momento de enconger la página, cuando su valor es 0, esta no se reduce ni aumenta*/
+}
+
+.left-logo img {
+    transform: translateY(-15%); /*el translateY sirve para trasladar por el eje Y*/
+    height: 35px;
+}
+
+.left-logo label {
+    color: #e60023;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.explore-ul {
+    line-height: 80px;
+    list-style: none; /*Esto sirve para quitarle el estilo a los lists, osea, que no estén enumerados*/
+    padding: 0 5px;
+    flex-shrink: 0;
+}
+
+.explore-ul li {
+    display: inline; /*Sirve para colocarlos en una linea o row*/
+}
+
+.explore-ul a {
+    text-decoration: none; /*Sirve para quitar el subrayado*/
+    color: black;
+    font-weight: bold;
+    padding: 6px 6px;
+    border-radius: 10px; /*Le añado un borde con circunferencia*/
+    margin: 0 5px;
+    transition: .5s; /*La transición a la hora de para el click*/
+}
+
+.explore-ul a:hover { /*El hover significa a la hora de pasar el click por la zona*/
+    background-color: #efefef;
+}
+
+.search-bar {
+    flex-shrink: 1; /*Como quiero que se encoja esta barra, su valor será mayor a 0*/
+    width: 960px;
+    border: 1px solid #dadada;
+    border-radius: 30px;
+    margin: auto;
+    margin-right: 10px;
+    margin-left: 10px;
+    height: 45px;
+    padding: 10px 10px;
+    background: white;
+    display: inline-flex; /*Sirve para que los items se alinien con este*/
+}
+
+.search-bar button[type=submit] { /*Los corchetes son para especificar un argumento del button*/
+    border: none;
+    background-color: white;
+    cursor: default; /*Ajusto el cursor para que no cambie al pasar por la lupa*/
+}
+
+.search-bar i {
+    transform: translateY(-20%);
+}
+
+.search-bar input[type=text] {
+    border: none;
+    width: 95%;
+}
+
+.search-bar input[type=text]:focus { /*El focus es al momento de hacer click*/
+    outline: none; /*Con esto le quito los horribles bordes que aparecen al hacer click*/
+}
+
+.sign-in-bar {
+    list-style: none;
+    flex-shrink: 0;
+    line-height: 80px;
+    padding: 0 8px;
+}
+
+.sign-in-bar li {
+    display: inline;
+}
+
+.sign-in-bar a {
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 12px;
+    border-radius: 30px;
+    margin: 0 5px;
+    transition: .5s;
+}
+
+.sign-in-bar #sign-in {
+    color: black;
+    background-color: #efefef;
+}
+
+.sign-in-bar #sign-in:hover {
+    background-color: #dadada;
+}
+
+.sign-in-bar #sign-up {
+    color: white;
+    background-color: #e60023;
+}
+
+.sign-in-bar #sign-up:hover {
+    background-color: #bb031f;
+}
+
+#check-across-down { /*Aquí señalo el input checkbox de la línea 34 de index.html*/
+    display: none; /*con esto, no se nota en la pantalla*/
+}
+
+.space-across-down {
+    transition: .5s;
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    transform: translateY(160%);
+    border-radius: 50%;
+}
+
+.space-across-down:hover {
+    background-color: #dadada;
+}
+
+.across-down { /*este es el código para crear una flecha para abajo, con unas modificaciones mías*/
+    display: inline-block;
+    margin: 0 2px;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    transform: translateY(-60%) translateX(25%) rotate(-45deg);
+    cursor: pointer;
+}
+
+.more-options { /*Estas son las opciones que aparecen al hacer click en la flecha*/
+    width: 310px;
+    display: none; /*Por default, estas no se ven*/
+    flex-direction: column;
+    position: fixed; /*Sirve para que no esté en la línea sino sobre ella*/
+    right: 0; /*cuantos pixeles separados de la derecha*/
+    top: 70px; /*cuantos pixeles separados del top*/
+    z-index: 100; /*sirve para que su posición sea enfrente y no detrás de otro ítem*/
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.158); /*esto añade sombras a la caja*/
+    background-color: white;
+    list-style: none;
+    padding: 10px 0 0 0;
+}
+
+.more-options li {
+    margin: 5px 0;
+    padding: 0 18px;
+}
+
+.more-options a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.more-options li:nth-child(3) {
+    padding-top: 15px;
+    border-top: 1px solid #dadada;
+    display: inline-flex;
+}
+
+.more-options p {
+    font-weight: bold;
+}
+
+/*el símbolo ~ indica a quién cambia al hacer una acción
+en este caso, al hacer click en la flecha, de desplegará las more-options
+*/
+#check-across-down:checked ~ .more-options { 
+    display: flex;
+}
+
