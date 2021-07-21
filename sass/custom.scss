@@ -1,0 +1,30 @@
+
+
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+$primary:       $blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-900;
+
+$thumbnail-padding:                 .25rem;
+$thumbnail-bg:                      $body-bg;
+$thumbnail-border-width:            $border-width;
+$thumbnail-border-color:            $gray-300;
+$thumbnail-border-radius:           $border-radius;
+$thumbnail-box-shadow:              $box-shadow-sm;
+
+.card-body{
+    border-color: yellow
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
