@@ -14,7 +14,7 @@
 
 .left-logo img {
     transform: translateY(-15%); /*el translateY sirve para trasladar por el eje Y*/
-    height: 35px;
+    height: 25px;
 }
 
 .left-logo label {
@@ -54,10 +54,10 @@
     border: 1px solid #dadada;
     border-radius: 30px;
     margin: auto;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 0px;
+    margin-left: 0px;
     height: 45px;
-    padding: 10px 10px;
+    padding: 10px 5px;
     background: white;
     display: inline-flex; /*Sirve para que los items se alinien con este*/
 }
@@ -85,7 +85,7 @@
     list-style: none;
     flex-shrink: 0;
     line-height: 80px;
-    padding: 0 8px;
+    padding: 0;
 }
 
 .sign-in-bar li {
@@ -171,6 +171,12 @@
     color: black;
     font-weight: bold;
     text-decoration: none;
+    transition: .2s;
+}
+
+.more-options a:hover {
+    text-decoration: underline;
+    color: #717171;
 }
 
 .more-options li:nth-child(3) {
@@ -190,3 +196,15 @@ en este caso, al hacer click en la flecha, de desplegará las more-options
     display: flex;
 }
 
+@media screen and (max-width: 768px) {
+    .search-bar button{
+        display: none;
+    }
+    .search-bar input {
+        display: none;
+    }
+
+    .search-bar {
+        border: none;
+    }
+}
