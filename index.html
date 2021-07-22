@@ -1,52 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles_nav.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- De aquí extraigo algunos íconos-->
-    <title>Ejercicio bootstrap</title>
-
-    <link rel="stylesheet" href="./sass/custom.css">
-
-    <style>
-        @media (min-width: 992px) {
-            .alto-100{
-                height: 100vh;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles_nav.css">
+  <link rel="stylesheet" href="styles_main.css">
   
+  <title>Ejercicio bootstrap</title>
+
+  <link rel="stylesheet" href="./sass/custom.css">
+
+  <style>
+    @media (min-width: 992px) {
+      .alto-100 {
+        height: 100vh;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
   <header>
     <nav class="nav-bar">
       <a class="left-logo" href="#">
-        <img src="imagenes/pinterest-logo.png"> <!--Imagen del logo de pinterest-->
+        <img src="imagenes/pinterest-logo.png">
+        <!--Imagen del logo de pinterest-->
         <label> Pinterest</label>
       </a>
-      <ul class="explore-ul"> <!--Creamos un unordered list para colocar items de la izquierda-->
+      <ul class="explore-ul">
+        <!--Creamos un unordered list para colocar items de la izquierda-->
         <li><a href="#"> Hoy</a></li>
         <li><a href="#"> Explorar</a></li>
       </ul>
-      <form class="search-bar"> <!--Creamos un form para añadir la lupa y el buscador-->
+      <form class="search-bar">
+        <!--Creamos un form para añadir la lupa y el buscador-->
         <button type="submit">
-          <i class="fa fa-search"></i> <!--Ícono de la lupa-->
+          <i class="fa fa-search"></i>
+          <!--Ícono de la lupa-->
         </button>
         <input type="text" placeholder="Encuentra ideas sobre cenas fáciles, moda, etc.">
       </form>
-      <ul class="sign-in-bar"> <!--Creamos un unordered list para la bara de la derecha-->
+      <ul class="sign-in-bar">
+        <!--Creamos un unordered list para la bara de la derecha-->
         <li><a href="#" id="sign-in"> Iniciar sesión</a></li>
         <li><a href="#" id="sign-up"> Regístrate</a></li>
       </ul>
-      <input type="checkbox" id="check-across-down"> <!--Este input se relaciona con el label de la flecha (across down)-->
+      <input type="checkbox" id="check-across-down">
+      <!--Este input se relaciona con el label de la flecha (across down)-->
       <div class="space-across-down">
-        <label class="across-down" for="check-across-down"></label> <!--Espacio para crear la flecha-->
+        <label class="across-down" for="check-across-down"></label>
+        <!--Espacio para crear la flecha-->
       </div>
-      <ul class="more-options"> <!--Opciones desplegadas por la flecha (su display es none por default)-->
+      <ul class="more-options">
+        <!--Opciones desplegadas por la flecha (su display es none por default)-->
         <li><a href="#"> Acerca de Pinterest</a></li>
         <li><a href="#"> Ver condiciones y privacidad</a></li>
         <li>
@@ -56,135 +66,195 @@
       </ul>
     </nav>
   </header>
-
-  <main class="container d-flex align-items-center justify-content-center alto-100">
-    <div class="row">
-        <!--columna izquierda-->
-        <div class="col-12 col-md-6 col-lg-6 col-sm-6 col-xxl-6">
-           <div class="row">
-               <div class="col-12 col-lg-6 p-2">
-                   <article class="card h-100 bg-img" style="background-image: url(./imagenes/img2.jpg); border-radius: 20px;">
-                       <div class="card-body">
-                           <div class="d-flex mb-3 flex-row-reverse">
-                            <button type="button" class="btn btn-danger">Guardar</button>
-                           </div>
-                            <div class="gap-2 d-md-flex justify-content-end">
-                                <button type="button" class="btn btn-light btn-sm" style="margin-top: 120px">↗️ alimentos</button>
-                                <button type="button" class="btn btn-light btn-sm" style="margin-top: 120px">⏏️</button>
-                                <button type="button" class="btn btn-light btn-sm" style="margin-top: 120px";>...</button>
-                            </div>
-                       </div>
-                   </article>
-               </div>
-               <div class="col-12 col-lg-6 p-2">
-                <article class="card h-200 bg-img" style="background-image: url(./imagenes/img5.jpg); border-radius: 20px;">
-                    <div class="card-body">
-                        <div class="d-flex mb-3 flex-row-reverse">
-                         <button type="button" class="btn btn-danger">Guardar</button>
-                        </div>
-                         <div class="gap-2 d-md-flex justify-content-end">
-                             <button type="button" class="btn btn-light btn-sm" style="margin-top: 80px">↗️ alimentos</button>
-                             <button type="button" class="btn btn-light btn-sm" style="margin-top: 80px">⏏️</button>
-                             <button type="button" class="btn btn-light btn-sm" style="margin-top: 80px">...</button>
-                         </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 p-2">
-                <article class="card h-200 bg-img" style="background-image: url(./imagenes/img6.jpg); border-radius: 20px;">
-                    <div class="card-body">
-                        <div class="d-flex mb-3 flex-row-reverse">
-                         <button type="button" class="btn btn-danger">Guardar</button>
-                        </div>
-                         <div class="gap-2 d-md-flex justify-content-end">
-                             <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">↗️ alimentos</button>
-                             <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">⏏️</button>
-                             <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">...</button>
-                         </div>
-                    </div>
-                </article>
-            </div>
-            <div class="col-12 col-lg-8 p-2">
-                <article class="card h-200 bg-img" style="background-image: url(./imagenes/img12.jpg); border-radius: 20px;">
-                    <div class="card-body">
-                        <div class="d-flex mb-3 flex-row-reverse">
-                         <button type="button" class="btn btn-danger">Guardar</button>
-                        </div>
-                         <div class="gap-2 d-md-flex justify-content-end">
-                             <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">↗️ alimentos</button>
-                             <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">⏏️</button>
-                             <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">...</button>
-                         </div>
-                    </div>
-                </article>
-            </div>
-           </div>
-        </div>
-         <!--columna derecha-->
-         <div class="col-12 col-lg-6 col-sm-6 col-xxl-6">
-            <div class="row">
-                <div class="col-12 col-lg-8 col-xl-6 p-2">
-            <article class="card h-100 bg-img" style="background-image: url(./imagenes/img8.jpg); border-radius: 20px;">
-                <div class="card-body">
-                    <div class="d-flex mb-3 flex-row-reverse">
-                     <button type="button" class="btn btn-danger">Guardar</button>
-                    </div>
-                     <div class="gap-2 d-md-flex justify-content-end">
-                         <button type="button" class="btn btn-light btn-sm" style="margin-top: 300px">↗️ alimentos</button>
-                         <button type="button" class="btn btn-light btn-sm" style="margin-top: 300px">⏏️</button>
-                         <button type="button" class="btn btn-light btn-sm" style="margin-top: 300px">...</button>
-                     </div>
+  <main class="container align-items-center justify-content-center">
+    <div class="row" data-masonry='{"percentPosition": true }'>
+      <div class="col-sm-6 col-lg-4 p-2">
+        <article class="card bg-img border-0">
+          <div class="card-body card-image" style="background-image: url(./imagenes/img2.jpg);  height: 300px;">
+            <div class="card-hover">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="text-end">
+                  <button type="button" class="btn btn-danger btn-card-save"><strong>Guardar</strong></button>
                 </div>
-            </article>
-        </div>
-        <div class="col-12 col-xl-6 p-2">
-         <article class="card h-200 bg-img" style="background-image: url(./imagenes/img18.jpg); border-radius: 20px;">
-             <div class="card-body">
-                 <div class="d-flex mb-3 flex-row-reverse">
-                  <button type="button" class="btn btn-danger">Guardar</button>
-                 </div>
-                  <div class="gap-2 d-md-flex justify-content-end">
-                      <button type="button" class="btn btn-light btn-sm" style="margin-top: 200px">↗️ alimentos</button>
-                      <button type="button" class="btn btn-light btn-sm" style="margin-top: 200px">⏏️</button>
-                      <button type="button" class="btn btn-light btn-sm" style="margin-top: 200px">...</button>
-                  </div>
-             </div>
-         </article>
-     </div>
-     <div class="col-12 col-xl-6 p-2">
-         <article class="card h-200 bg-img" style="background-image: url(./imagenes/img29.jpg); border-radius: 20px;">
-             <div class="card-body">
-                 <div class="d-flex mb-3 flex-row-reverse">
-                  <button type="button" class="btn btn-danger">Guardar</button>
-                 </div>
-                  <div class="gap-2 d-md-flex justify-content-end">
-                      <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">↗️ alimentos</button>
-                      <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">⏏️</button>
-                      <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">...</button>
-                  </div>
-             </div>
-         </article>
-     </div>
-     <div class="col-12 col-xl-6 p-2">
-         <article class="card h-200 bg-img" style="background-image: url(./imagenes/img35.jpg); border-radius: 20px;">
-             <div class="card-body">
-                 <div class="d-flex mb-3 flex-row-reverse">
-                  <button type="button" class="btn btn-danger">Guardar</button>
-                 </div>
-                  <div class="gap-2 d-md-flex justify-content-end">
-                    <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">↗️ alimentos</button>
-                      <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">⏏️</button>
-                      <button type="button" class="btn btn-light btn-sm" style="margin-top: 100px">...</button>
-                  </div>
-             </div>
-         </article>
-        </div>
+                <div class="text-end">
+                  <button type="button" class="btn btn-light btn-sm btn-card-label"><i class="fas fa-arrow-right"></i>
+                    <strong>youtube.com</strong></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-upload"></i></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-ellipsis-h"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-2">
+        <article class="card bg-img border-0">
+          <div class="card-body card-image" style="background-image: url(./imagenes/img5.jpg);  height: 200px;">
+            <div class="card-hover">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="text-end">
+                  <button type="button" class="btn btn-danger btn-card-save"><strong>Guardar</strong></button>
+                </div>
+                <div class="text-end">
+                  <button type="button" class="btn btn-light btn-sm btn-card-label"><i class="fas fa-arrow-right"></i>
+                    <strong>fondospara...</strong></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-upload"></i></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-ellipsis-h"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-2">
+        <article class="card bg-img border-0">
+          <div class="card-body card-image" style="background-image: url(./imagenes/img6.jpg);  height: 350px;">
+            <div class="card-hover">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="text-end">
+                  <button type="button" class="btn btn-danger btn-card-save"><strong>Guardar</strong></button>
+                </div>
+                <div class="text-end">
+                  <button type="button" class="btn btn-light btn-sm btn-card-label"><i class="fas fa-arrow-right"></i>
+                    <strong>messenger...</strong></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-upload"></i></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-ellipsis-h"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-2">
+        <article class="card bg-img border-0">
+          <div class="card-body card-image" style="background-image: url(./imagenes/img12.jpg);  height: 330px; width: 300;">
+            <div class="card-hover">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="text-end">
+                  <button type="button" class="btn btn-danger btn-card-save"><strong>Guardar</strong></button>
+                </div>
+                <div class="text-end">
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-upload"></i></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-ellipsis-h"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-2">
+        <article class="card bg-img border-0">
+          <div class="card-body card-image" style="background-image: url(./imagenes/img8.jpg);  height: 300px;">
+            <div class="card-hover">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="text-end">
+                  <button type="button" class="btn btn-danger btn-card-save"><strong>Guardar</strong></button>
+                </div>
+                <div class="text-end">
+                  <button type="button" class="btn btn-light btn-sm btn-card-label"><i class="fas fa-arrow-right"></i>
+                    <strong>youtube.com</strong></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-upload"></i></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-ellipsis-h"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-2">
+        <article class="card bg-img border-0">
+          <div class="card-body card-image" style="background-image: url(./imagenes/img18.jpg);  height: 180px;">
+            <div class="card-hover">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="text-end">
+                  <button type="button" class="btn btn-danger btn-card-save"><strong>Guardar</strong></button>
+                </div>
+                <div class="text-end">
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-upload"></i></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-ellipsis-h"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-2">
+        <article class="card bg-img border-0">
+          <div class="card-body card-image" style="background-image: url(./imagenes/img29.jpg);  height: 250px;">
+            <div class="card-hover">
+              <div class="d-flex flex-column justify-content-between h-100"></div>
+              <div class="text-end">
+                <button type="button" class="btn btn-danger btn-card-save"><strong>Guardar</strong></button>
+              </div>
+              <div class="text-end">
+                <button type="button" class="btn btn-light btn-sm btn-card-label"><i class="fas fa-arrow-right"></i>
+                  <strong>outlok.liv...</strong></button>
+                <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                    class="fas fa-upload"></i></button>
+                <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                    class="fas fa-ellipsis-h"></i></button>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-2">
+        <article class="card bg-img border-0">
+          <div class="card-body card-image" style="background-image: url(./imagenes/img35.jpg);  height: 260px;">
+            <div class="card-hover">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="text-end">
+                  <button type="button" class="btn btn-danger btn-card-save"><strong>Guardar</strong></button>
+                </div>
+                <div class="text-end">
+                  <button type="button" class="btn btn-light btn-sm btn-card-label"><i class="fas fa-arrow-right"></i>
+                    <strong>youtube.com</strong></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-upload"></i></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-ellipsis-h"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="col-sm-6 col-lg-4 p-2">
+        <article class="card bg-img border-0">
+          <div class="card-body card-image" style="background-image: url(./imagenes/img15.jpg);  height: 180px;">
+            <div class="card-hover">
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="text-end">
+                  <button type="button" class="btn btn-danger btn-card-save"><strong>Guardar</strong></button>
+                </div>
+                <div class="text-end">
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-upload"></i></button>
+                  <button type="button" class="btn btn-light btn-sm btn-card-circle"><i
+                      class="fas fa-ellipsis-h"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
     </div>
-</main>
-
- 
-<body>
-   
-
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async>
+  </script>
 </body>
+
 </html>

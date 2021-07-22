@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn.btn-light{
+    border-color: rgb(245 245 245 / 80%);
+    background-color: rgb(245 245 245 / 80%);
+}
+
+.btn.btn-light{
+    border-color: rgb(245 245 245 / 80%);
+    background-color: rgb(245 245 245 / 80%);
+}
+
+.btn.btn-light:hover {
+    background-color: #f9fafb;
+    border-color: #f9fafb;
+}
+
+.card .card-image {
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.card .card-image:hover {
+    filter: opacity(0.9);
+    cursor: zoom-in;
+    background-color: lightgray;
+}
+.card .card-image .card-hover{
+    display: none; 
+    width: 100%;
+    height: 100%;
+}
+.card .card-image:hover .card-hover{
+    display: inline-block;
+}
+
+.card .btn-card-save {
+    border-radius: 30px;    
+    padding: 12px 12px;
+    background-color: #f12336;
+    border-color: #f12336;
+}
+
+.card .btn-card-save:hover {
+    background-color: #bb031f;
+    border-color: #bb031f;
+}
+
+.card .btn-card-circle {
+    border-radius: 50%;
+    font-size: 13px;
+    margin-top: 80px
+}
+
+.card .btn-card-label {
+    border-radius: 30px;
+    font-size: 13px;
+    margin-top: 80px;
+    transition: .5s;
+}
+
+.card .btn-card-label i {
+    transform: rotate(-45deg);
+}
