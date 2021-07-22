@@ -46,6 +46,7 @@
 
 .explore-ul a:hover { /*El hover significa a la hora de pasar el click por la zona*/
     background-color: #efefef;
+    color: black;
 }
 
 .search-bar {
