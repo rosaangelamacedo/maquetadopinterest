@@ -1,0 +1,172 @@
+.footer {
+    position:fixed;
+    bottom:0;
+    width:7%;
+    right: 0;
+    height: 155px;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.f-container {
+    margin: auto 30px;
+}
+
+.f-buttons {
+    margin: 8px;
+}
+
+.f-buttons .fas {
+    background-color: white;
+    padding: 20px;
+    border-radius: 50%;
+    border: none;
+    transition: .2s;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.158);
+    
+}
+
+.f-buttons .fas:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+#plus-check, #quest-check {
+    display: none;
+}
+
+
+.f-buttons .options-plus {
+    position: fixed;
+    background-color: white;
+    bottom: 50px;
+    right: 100px;
+    width: 300px;
+    border-radius: 20px;
+    display: none;
+    flex-direction: column;
+}
+
+.f-buttons .options-plus hr {
+    margin: 0;
+    padding: 0;
+}
+
+.options-plus .p-top {
+    padding: 10px;
+    display: inline-flex;
+    border-radius: 20px 20px 0 0;
+}
+
+.options-plus .p-top p {
+    margin: 0;
+}
+
+.options-plus .p-top:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.options-plus .p-top i {
+    transform: translateY(40%);
+    margin: 0 10px;
+}
+
+.options-plus .p-bot {
+    padding: 10px;
+    display: inline-flex;
+    border-radius: 0 0 20px 20px;
+}
+
+.options-plus .p-bot p {
+    margin: 0;
+}
+
+.options-plus .p-bot:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.options-plus .p-bot i {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 10px;
+    transform: translateY(22%);
+    box-shadow: none;
+}
+
+#plus-check:checked ~ .options-plus {
+    display: flex;
+}
+
+.f-buttons .options-quest {
+    position: fixed;
+    bottom: 25px;
+    right: 100px;
+    width: 300px;
+    border-radius: 20px;
+    background-color: white;
+    display: none;
+}
+
+.f-buttons .options-quest hr {
+    margin: 0;
+}
+
+.options-quest .q-top1, .q-top2 {
+    padding: 10px 12px;
+}
+
+.options-quest .q-top1 {
+    border-radius: 20px 20px 0 0;
+}
+
+
+.options-quest .q-top1:hover, .q-top2:hover {
+    background-color: #efefef;
+    cursor: pointer;
+}
+
+.options-quest .q-bot {
+    list-style: none;
+    margin: 10px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.options-quest .q-bot li {
+    margin: 5px 2px;
+}
+
+.options-quest .q-bot a {
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    transition: .1s;
+}
+
+.options-quest .q-bot a:hover {
+    text-decoration: underline;
+    color: #000;
+    background-color: transparent;
+}
+
+#quest-check:checked ~ .options-quest {
+    display: block;
+}
+
+@media screen and (max-width:845px) {
+    .f-buttons .options-plus {
+        right: 10px;
+        bottom: 150px;
+    }
+
+    .f-buttons .options-quest {
+        right: 10px;
+        bottom: 85px;
+    }
+}

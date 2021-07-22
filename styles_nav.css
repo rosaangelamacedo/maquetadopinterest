@@ -66,6 +66,7 @@
     border: none;
     background-color: white;
     cursor: default; /*Ajusto el cursor para que no cambie al pasar por la lupa*/
+    margin: 2px 5px;
 }
 
 .search-bar i {
