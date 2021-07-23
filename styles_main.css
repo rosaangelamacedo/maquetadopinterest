@@ -22,6 +22,7 @@
 .card .card-image {
     border-radius: 20px;
     box-sizing: border-box;
+    background-size: cover;
 }
 
 .card .card-image:hover {
